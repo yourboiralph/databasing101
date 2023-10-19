@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit User</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <a href="../index.php">Back</a>
@@ -13,6 +13,7 @@
     require('../php/user/user.php');
     while ($row =  $result->fetch_assoc()) {
     ?>
+    <div class="background">
         <form action="../php/user/update-user.php" method="POST">
             <div>
                 <label>First Name</label> <br />
@@ -33,6 +34,7 @@
                 <button type="submit">Update</button>
             </div>
         </form>
+    </div>
     <?php } ?>
 </body>
 </html>

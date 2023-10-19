@@ -7,9 +7,10 @@ a {
 }
 
 a:hover{
-    color: #800000;
+
 }
 table{
+    margin-top: 20px;
     border-collapse: collapse;
     width: 100%;
 }
@@ -29,6 +30,74 @@ th{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #800000;
+    background-color: #ffc0cb;
     color: white;
 }
+
+.btn{
+    display: inline;
+    background-color: #ffc0cb;
+    padding: 10px 25px;
+}
+
+form{
+    margin-top: 20px;
+}
+input{
+    border: 2px solid #ffc0cb;
+}
+.prompt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #ffc0cb;
+}
+.background {
+    background-color: #ffc0cb;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ffa5b1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #ff80a0;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff6699;
+}
+

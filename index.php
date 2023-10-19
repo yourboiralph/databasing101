@@ -9,9 +9,16 @@
 <body>
     <h3>Users</h3>
     <p>
-        <!-- Katong banner kung success ba siya -->
+        <?php
+        if(isset($_GET['save-success'])){ ?>
+            
+            <div class="prompt" id="prompt">
+                <h3>Save Successfully!</h3>
+            </div>
+        
+        <?php } ?>
     </p>
-    <div>
+    <div class="btn">
         <a href="user/create.php">Add Users</a>
     </div>
     <table>
@@ -46,4 +53,10 @@
         </tbody>
     </table>
 </body>
+<script>
+    setTimeout(function(){
+        document.getElementById('prompt').style.display = 'none';
+        window.location.href = 'index.php';
+    }, 1000);
+</script>
 </html>
